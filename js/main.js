@@ -46,6 +46,12 @@ $(document).ready(function () {
     $(backStep).fadeIn();
   });
 
+  $('.quiz-form__ribbon').click(function() {
+    $(this).closest('.quiz-form').hide();
+    var otherForm = $(this).closest('.quiz-form').siblings('.quiz-form')[0];
+    $(otherForm).fadeIn();
+  })
+
   var forEach = function forEach(t, o, r) {
     if ("[object Object]" === Object.prototype.toString.call(t)) for (var c in t) {
       Object.prototype.hasOwnProperty.call(t, c) && o.call(r, t[c], c, t);
