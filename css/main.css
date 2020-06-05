@@ -749,6 +749,10 @@ h1 {
 	position: relative;
 }
 
+.quiz-form.simple {
+	padding-bottom: 25px;
+}
+
 .quiz-form .row {
 	margin-bottom: 10px;
 }
